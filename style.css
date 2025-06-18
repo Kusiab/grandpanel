@@ -1,0 +1,334 @@
+@font-face {
+  font-family: "Satoshi Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Satoshi Regular"),
+    url("../fonts/Satoshi-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satoshi Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Satoshi Light"), url("../fonts/Satoshi-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satoshi Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Satoshi Light Italic"),
+    url("../fonts/Satoshi-LightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satoshi Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Satoshi Medium"),
+    url("../fonts/Satoshi-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satoshi Medium Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Satoshi Medium Italic"),
+    url("../fonts/Satoshi-MediumItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satoshi Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Satoshi Bold"), url("../fonts/Satoshi-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satoshi Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Satoshi Bold Italic"),
+    url("../fonts/Satoshi-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satoshi Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Satoshi Black"), url("../fonts/Satoshi-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satoshi Black Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Satoshi Black Italic"),
+    url("../fonts/Satoshi-BlackItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satoshi Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Satoshi Italic"),
+    url("../fonts/Satoshi-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Satoshi Variable Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Satoshi Variable Italic"),
+    url("../fonts/Satoshi-VariableItalic.woff") format("woff");
+}
+
+body {
+  display: flex;
+  margin: 0;
+  font-family: "Satoshi Regular", sans-serif;
+}
+
+.sidebar {
+  width: 18vw;
+  height: 100vh;
+  background: #d60d2e;
+  background: radial-gradient(
+    circle at bottom,
+    rgba(214, 13, 46, 1) 1%,
+    rgba(156, 11, 35, 1) 100%
+  );
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  box-shadow: rgba(0, 0, 0, 0.27) 8px 0px 12px;
+}
+
+.sidebar h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-family: "Satoshi Bold";
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.sidebar li {
+  margin: 4px 0;
+  background: #f7f7f7;
+  background: radial-gradient(
+    circle at bottom,
+    rgb(249, 249, 249) 1%,
+    rgba(209, 209, 209, 1) 100%
+  );
+  border-radius: 24px;
+  color: rgba(156, 11, 35, 1);
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  box-shadow: rgba(0, 0, 0, 0.315) 0px 3px 6px;
+  font-size: 1.1em;
+}
+
+/* reset-link-styles.css */
+
+/* 1. Podstawowy reset dla wszystkich stanów linku */
+a,
+a:visited,
+a:hover,
+a:active {
+  /* dziedziczenie koloru zamiast domyślnego niebieskiego / fioletowego */
+  color: inherit;
+  /* usunięcie podkreślenia */
+  text-decoration: none;
+  /* usunięcie ewentualnego tła (dla elementów typu button/link) */
+  background-color: transparent;
+  /* kursor wskazujący kliknięcie */
+  cursor: pointer;
+}
+
+/* 2. Dodatkowy reset stanu focus (ważne dla dostępności) */
+a:focus {
+  /* usunięcie domyślnej obwódki przeglądarki */
+  outline: none;
+  /* możesz tu dodać własne style focus, np. outline: 2px solid #005fcc; */
+}
+
+#main {
+  height: fit-content;
+  padding-left: 4em;
+  padding-top: 4em;
+  display: grid;
+  align-content: center;
+  align-items: start;
+}
+
+.h1 {
+  font-size: 2.8em;
+  font-family: "Satoshi Bold";
+}
+
+.h2 {
+  font-size: 1.8em;
+  font-family: "Satoshi Bold";
+}
+
+.h3 {
+  font-size: 1.15em;
+  font-family: "Satoshi Regular";
+}
+
+.h4 {
+  font-size: 0.9em;
+  font-family: "Satoshi Regular";
+}
+
+.sectionRed,
+.sectionGrey {
+  margin-bottom: 1em;
+  padding: 1.2em 2em;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.298) 0px 4px 12px;
+  display: block;
+}
+
+.sectionRed {
+  background: #d60d2e;
+  background: radial-gradient(
+    circle at bottom,
+    rgba(214, 13, 46, 1) 1%,
+    rgba(156, 11, 35, 1) 100%
+  );
+  color: white;
+}
+
+.sectionGrey {
+  background: #e4e4e4;
+  background: radial-gradient(
+    circle at bottom,
+    rgb(249, 249, 249) 1%,
+    rgba(209, 209, 209, 1) 100%
+  );
+}
+
+.statsDiv {
+  display: flex;
+  gap: 1em;
+  font-size: 1.2em;
+}
+
+#statystykiDiv {
+  display: grid;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+.statystykiFlex {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+.actionButton,
+.sendButton {
+  background: #d60d2e;
+  background: radial-gradient(
+    circle at bottom,
+    rgba(214, 13, 46, 1) 1%,
+    rgba(156, 11, 35, 1) 100%
+  );
+  color: white;
+  font-family: "Satoshi Bold";
+  font-size: 1.3em;
+  border-radius: 36px;
+  padding: 0.3em 1.5em;
+  border: none;
+}
+
+.returnButton,
+.addToMessageButton,
+.languageButton {
+  background: #f7f7f7;
+  background: radial-gradient(
+    circle at bottom,
+    rgb(233, 233, 233) 1%,
+    rgb(193, 193, 193) 100%
+  );
+  font-family: "Satoshi Regular";
+  font-size: 20px;
+  border-radius: 36px;
+  padding: 0.3em 1em;
+  border: none;
+  width: fit-content;
+}
+
+#czatInput {
+  gap: 1em;
+  display: grid;
+  margin-top: 1em;
+}
+
+#czatInput textarea {
+  background: #f7f7f7;
+  border-radius: 36px;
+  color: black;
+  font-size: 1em;
+  padding: 1em;
+}
+
+#czat {
+  min-width: 35dvw;
+  border-radius: 12px;
+  border: solid black 1px;
+  box-shadow: rgba(0, 0, 0, 0.229) 0px 4px 8px;
+  height: 80dvh;
+  overflow-y: scroll;
+}
+
+#czatLeft {
+  display: grid;
+}
+
+.returnButton {
+  margin-bottom: 2em;
+}
+
+#usunPlik,
+#usunPrzykladowyDokument,
+#pobierzPrzykladowyDokument {
+  display: none;
+}
+
+.inputBox {
+  text-align: center;
+  display: grid;
+  width: 100%;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+.inputBox input,
+.inputBox select,
+.inputBox textarea .inputBox input[type="number"] {
+  width: auto;
+  padding: 0.15em 0.4em;
+  border-radius: 12px;
+  border: solid black 1px;
+  font-family: "Satoshi Regular";
+  font-size: 1.2em;
+}
+
+#nowyProduktEdycjaTresci {
+  width: auto;
+  padding: 0.45em;
+  border-radius: 12px;
+  border: solid black 1px;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
